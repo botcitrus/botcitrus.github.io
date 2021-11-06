@@ -1,55 +1,32 @@
-﻿<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <!-- * Что-то на умном * -->
-    <meta name="viewport" content="width=device-width">
-    <title>PhysisBot</title>
-    
-    <link rel="icon" href="assets/img/icon.png">
-    <link rel="stylesheet" href="assets/css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+	<title>Калькулятор</title>
 </head>
 <body>
-    <header>
-        <div class="main">
-            <h1 class="header"><img src="assets/img/icon.png"> PhysisBot</h1>
-        </div>
-    </header>
-
-    <section>
-        <div class="main">
-            <h2 class="title">Обо мне</h2>
-            <div class="about">
-                <div class="text-about">
-                    <p>Доброго времени, и сейчас я хочу тебе рассказать о себе! PhysisBot - это бот для серверов с большим активом!Данный бот не даст вам заскучать!В список команд входят такие как: Экономика, Модерация, NSFW, Команды от разработчика, Фан, Support, Премиум команды! Ниже есть информация о разработчике: </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="main">
-            <h2 class="title">Мои проекты</h2>
-            <div class="buttons">
-                <a class="button" href="https://discord.gg/wnfC5sKZp5" target="_blank">Discord сервер "Physis"</a><br>
-                <br>
-                <a class="button" href="https://discord.com/api/oauth2/authorize?client_id=873271343012012124&permissions=430303083766&scope=bot" target="_blank">Ссылка на Discord бот "PhysisBot"</a>  
-                <br> 
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="main">
-            <h2 class="title">Связь со мной</h2>
-            <div class="buttons2">
-                <a class="button2" href="https://discord.com/users/794903988213383169" target="_blank">Discord: Fudge (feat PetuSHOK)#0228</a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>Права охраняет PhysisModeration © 2021 г.</p>
-    </footer>
+	<form class="calculator" name="calc">
+		<input type="txt" name="txt" class="value" readonly="">
+		<span class="num clear" onclick="document.calc.txt.value =''">C</span>
+		<span class="num" onclick="document.calc.txt.value +='/'">/</span>
+		<span class="num" onclick="document.calc.txt.value +='*'">*</span>
+		<span class="num" onclick="document.calc.txt.value +='7'">7</span>
+		<span class="num" onclick="document.calc.txt.value +='8'">8</span>
+		<span class="num" onclick="document.calc.txt.value +='9'">9</span>
+		<span class="num" onclick="document.calc.txt.value +='-'">-</span>
+		<span class="num" onclick="document.calc.txt.value +='4'">4</span>
+		<span class="num" onclick="document.calc.txt.value +='5'">5</span>
+		<span class="num" onclick="document.calc.txt.value +='6'">6</span>
+		<span class="num plus" onclick="document.calc.txt.value +='+'">+</span>
+		<span class="num" onclick="document.calc.txt.value +='3'">3</span>
+		<span class="num" onclick="document.calc.txt.value +='2'">2</span>
+		<span class="num" onclick="document.calc.txt.value +='1'">1</span>
+		<span class="num" onclick="document.calc.txt.value +='0'">0</span>
+		<span class="num" onclick="document.calc.txt.value +='00'">00</span>
+		<span class="num" onclick="document.calc.txt.value +='.'">.</span>
+		<span class="num rowno" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+	</form>
 </body>
 </html>
