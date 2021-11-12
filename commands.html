@@ -202,6 +202,45 @@
                         </div>
                     </div>
                 </div>
+                <div id='economy'>
+                    <input type='checkbox' id='ec' class='accordion_input'>
+                    <label for='ec' class='accordion_label'>Экономика</label>
+                    <div class='content accordion'>
+                        <div class='card'>
+                            <input type='checkbox' id='give' class='accordion_input'>
+                            <label for='give' class='accordion_label'>Дать</label>
+                            <div class='content'>
+                                <p>Выдайте сумму пользователю!</p>
+                                <div class='flex usage'>
+                                    <h4>Использование: </h4>
+                                    <pre><code>дать <@пользователь> <число></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='take' class='accordion_input'>
+                            <label for='take' class='accordion_label'>Забрать</label>
+                            <div class='content'>
+                                <p>Забрать сумму у пользователю!</p>
+                                <div class='flex usage'>
+                                    <h4>Использование: </h4>
+                                    <pre><code>забрать <@пользователь> <число></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <input type='checkbox' id='balance' class='accordion_input'>
+                            <label for='balance' class='accordion_label'>Баланс</label>
+                            <div class='content'>
+                                <p>Посмотреть баланс!</p>
+                                <div class='flex usage'>
+                                    <h4>Использование: </h4>
+                                    <pre><code>баланс [@пользователь]</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id='infoContainer'>
                     <input type='checkbox' id='info' class='accordion_input'>
                     <label for='info' class='accordion_label'>Информация</label>
